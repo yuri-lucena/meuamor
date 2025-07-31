@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Feliz dia, meu amor! 💖</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div
+      style="
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      "
+      id="mainContainer"
+    >
+      <div
+        class="button-container"
+        id="buttonContainer"
+        style="position: absolute"
+      >
+        <button class="liquid-button" id="liquidButton">
+          Clique aqui
+          <div class="liquid-fill" id="liquidFill"></div>
+        </button>
+      </div>
+
+      <!-- Polaroids -->
+      <div
+        class="polaroids-container"
+        id="polaroidsContainer"
+        style="position: absolute"
+      >
+        <div class="polaroid">
+          <div class="polaroid-image">
+            <img
+              src="images\20250116_234024560_iOS 1.jpg"
+              alt="Foto 1"
+              onload="this.parentElement.classList.add('has-image')"
+              onerror="this.style.display='none'"
+            />
+          </div>
+          <div class="polaroid-text">Nosso primeiro encontro</div>
+        </div>
+        <div class="polaroid">
+          <div class="polaroid-image">
+            <img
+              src="images\20250208_143848259_iOS.png"
+              alt="Foto 2"
+              onload="this.parentElement.classList.add('has-image')"
+              onerror="this.style.display='none'"
+            />
+          </div>
+          <div class="polaroid-text">Nossa primeira viagem juntos</div>
+        </div>
+        <div class="polaroid">
+          <div class="polaroid-image">
+            <img
+              src="images\20250209_002425197_iOS.jpg"
+              alt="Foto 3"
+              onload="this.parentElement.classList.add('has-image')"
+              onerror="this.style.display='none'"
+            />
+          </div>
+          <div class="polaroid-text">Nossa primeira 'coisa' combinando</div>
+        </div>
+        <div
+          class="polaroid-text"
+          style="display: flex; flex-direction: column"
+        >
+          <p
+            style="
+              font-size: 18px;
+              width: 87ch;
+              white-space: nowrap;
+              overflow: hidden;
+              animation: typing 2s steps(87),
+                blink-caret 0.5s step-end infinite alternate;
+            "
+          >
+            Vejo que a cada dia que passa, eu sinto que a gente ainda tem muito
+            do que viver juntos
+          </p>
+          <br />
+          <button class="liquid-button" id="continueButton1">Continuar</button>
+        </div>
+      </div>
+
+      <div
+        class="polaroids-container hidden"
+        id="polaroidsContainer2"
+        style="padding-bottom: 100px; position: absolute"
+      >
+        <div class="polaroid">
+          <div class="polaroid-image">
+            <img
+              src="images\20250222_231021930_iOS.jpg"
+              alt="Foto 1"
+              onload="this.parentElement.classList.add('has-image')"
+              onerror="this.style.display='none'"
+            />
+          </div>
+          <div class="polaroid-text">Nosso primeiro aniversário de namoro</div>
+        </div>
+        <div class="polaroid">
+          <div class="polaroid-image">
+            <img
+              src="images\20250322_201922945_iOS.jpg"
+              alt="Foto 2"
+              onload="this.parentElement.classList.add('has-image')"
+              onerror="this.style.display='none'"
+            />
+          </div>
+          <div class="polaroid-text">Mais uma viagem para a nossa conta</div>
+        </div>
+        <div class="polaroid">
+          <div class="polaroid-image">
+            <img
+              src="images\20250421_001919852_iOS.jpg"
+              alt="Foto 3"
+              onload="this.parentElement.classList.add('has-image')"
+              onerror="this.style.display='none'"
+            />
+          </div>
+          <div class="polaroid-text">
+            Experiências únicas que simplesmentes aconteceram com você, meu amor
+          </div>
+        </div>
+        <div
+          class="polaroid-text"
+          style="display: flex; flex-direction: column"
+        >
+          <p style="font-size: 18px">
+            E mais umas vez a nossa história começa a mudar, um novo capítulo
+            vem sendo escrito, e sei que esse capítulo vai ser o melhor da minha
+            vida, não só por ter você ao meu lado, mas por poder compartilhar de
+            algo muito especial e com você
+          </p>
+          <br />
+          <button
+            type="button"
+            class="liquid-button"
+            onclick="showPolaroids3()"
+          >
+            Continuar
+          </button>
+        </div>
+      </div>
+
+      <div
+        class="polaroids-container hidden"
+        id="polaroidsContainer3"
+        style="padding-bottom: 100px; position: absolute"
+      >
+        <div class="polaroid">
+          <div class="polaroid-image">
+            <img
+              src="images\20250712_183402000_iOS.jpg"
+              alt="Foto 1"
+              onload="this.parentElement.classList.add('has-image')"
+              onerror="this.style.display='none'"
+            />
+          </div>
+          <div class="polaroid-text">
+            E agora, chegamos no nosso próximo capítulo
+          </div>
+        </div>
+        <div class="polaroid">
+          <div class="polaroid-image">
+            <img
+              src="images\20250720_212659000_iOS.png"
+              alt="Foto 2"
+              onload="this.parentElement.classList.add('has-image')"
+              onerror="this.style.display='none'"
+            />
+          </div>
+          <div class="polaroid-text">
+            Uma pequena semente de nós está começando a brotar
+          </div>
+        </div>
+        <div
+          class="polaroid-text"
+          style="display: flex; flex-direction: column"
+        >
+          <p style="font-size: 18px">
+            Mal posso esperar para poder ver como será o nosso neném, mas tenho
+            total certeza que vai ser lindão/lindona, como a mãe dele é! E com
+            tudo isso, não podia faltar algo que eu sempre sonhei, que sempre
+            almejei com você, é o meu sonho e meu desejo. Agora é com você, só
+            precisa clicar, amor...
+          </p>
+          <br />
+          <button
+            type="button"
+            class="liquid-button"
+            onclick="showPedidoFinal()"
+          >
+            Clica aqui, vai!
+          </button>
+        </div>
+      </div>
+
+      <!-- Linha do tempo -->
+      <div
+        class="timeline-container"
+        id="timelineContainer"
+        style="display: none"
+      >
+        <div class="timeline">
+          <div class="timeline-dot active" id="timelineDot1"></div>
+          <div class="timeline-line">
+            <div class="timeline-line-fill" id="timelineLine1"></div>
+          </div>
+          <div class="timeline-dot" id="timelineDot2"></div>
+          <div class="timeline-line">
+            <div class="timeline-line-fill" id="timelineLine2"></div>
+          </div>
+          <div class="timeline-dot" id="timelineDot3"></div>
+        </div>
+        <div class="timeline-text">Mova-se pela nossa história</div>
+      </div>
+    </div>
+
+    <div
+      id="pedidoFinal"
+      style="
+        display: none;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      "
+    >
+      <h1>Você aceita casar cum eu??</h1>
+      <div style="display: flex; gap: 10px">
+        <button class="liquid-button" id="botaoSim">Sim, eu quero!</button>
+        <button class="liquid-button" id="botaoFinal">Não, num quero!</button>
+      </div>
+
+      <div
+        id="hiddenDiv"
+        style="
+          margin-top: 50px;
+          opacity: 0;
+          transition: opacity 0.5s ease;
+          display: flex;
+          flex-direction: column;
+        "
+      >
+        Você não tem escolha hihihihi
+        <img src="images\garotinho.gif" alt="" />
+      </div>
+    </div>
+
+    <div id="quartoDiv" style="display: none">
+      <div
+        style="
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          gap: 20px;
+        "
+      >
+        <h1>
+          Pois vem aqui no quarto, que eu tenho uma surpresa para você hihihi
+        </h1>
+        <img src="images\muac.webp" alt="" />
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
